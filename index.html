@@ -18,5 +18,17 @@
 			you can define which you can see via the Number object which can give you
 			access to the max and min numbers and values.
 		</p>
+		<h3>Floating Point Precision</h3>
+		<p>
+			JavaScript represents numbers/floats in a binary systme even though we
+			define them in a decimal system and this binary system implemenets
+			rounding whihc can sometimed give us odd and unexpetced results e.g. 0.2 +
+			0.4 does not equal 0.6 in the binary system. We have ways to get the
+			correct precision such as using the toFixed method which converts the
+			floating point to a string of the number down to the amount of decimal
+			places ypu pass as an argument to toFixed. Another method is to multiply
+			the number by 100 so that you are always working with integer values and
+			therfore avoid the floating point precision problem altogether.
+		</p>
 	</body>
 </html>
