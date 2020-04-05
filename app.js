@@ -25,3 +25,21 @@ const string3 = `${string1}`;
 console.log(string1.toUpperCase());
 console.log(string2.toLowerCase());
 console.log(string3.startsWith('he'));
+
+// tagged templates
+const logProductDetails = (strings, productPrice, productDetails) => {
+	let price = 'fairly cheap';
+
+	if (productPrice > 20) {
+		price = 'pretty expensive';
+	}
+
+	return strings + productDetails + price;
+};
+
+const prodPrice = 29.99;
+const prodDesc = 'JavaScript - Course';
+
+const product = logProductDetails`This product is ${prodPrice} and is a ${prodDesc}`;
+
+console.log(product);
