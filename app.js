@@ -43,3 +43,9 @@ const prodDesc = 'JavaScript - Course';
 const product = logProductDetails`This product is ${prodPrice} and is a ${prodDesc}`;
 
 console.log(product);
+
+// regular expressions
+const regEx = /^\S+@\S+\.\S+$/;
+const userEmail = 'test@test.com';
+
+console.log(regEx.test(userEmail));
