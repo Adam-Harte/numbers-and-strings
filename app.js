@@ -16,3 +16,12 @@ const bigInt2 = bigInt(74710030029843109982191);
 
 console.log(bigInt1);
 console.log(bigInt2);
+
+// strings
+const string1 = 'hello';
+const string2 = 'HELLO';
+const string3 = `${string1}`;
+
+console.log(string1.toUpperCase());
+console.log(string2.toLowerCase());
+console.log(string3.startsWith('he'));
